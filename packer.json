@@ -24,33 +24,4 @@
       "sudo yum install java-1.8.0-openjdk.x86_64 -y"
     ]
   },
-  {
-    "type": "file",
-    "source": "/vagrant/basic-api-0.0.1-SNAPSHOT.jar",
-    "destination": "/home/ec2-user/basic-api-0.0.1-SNAPSHOT.jar"
-  },
-  {
-    "type": "file",
-    "source": "/vagrant/startup/spring.service",
-    "destination": "/home/ec2-user/spring.service"
-  },
-  {
-    "type": "file",
-    "source": "/vagrant/startup/startup.sh",
-    "destination": "/home/ec2-user/startup.sh"
-  },
-  {
-    "type": "shell",
-    "inline": [
-      "sleep 5",
-      "sudo cp /home/ec2-user/spring.service /etc/systemd/system/",
-      "sed -i 's/\r$//' /home/ec2-user/startup.sh",
-      "sudo systemctl enable NetworkManager-wait-online",
-      "sudo systemctl daemon-reload",
-      "sudo systemctl enable spring.service",
-      "sudo systemctl start spring.service"
-    ]
-  }
-  ]
  
-}
