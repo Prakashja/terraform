@@ -1,9 +1,11 @@
 {
-  "variables": {
-    "aws_access_key": "AKIAJ7ZYPMA2MRXH5MEA",
-    "aws_secret_key": "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",
-    "app_name" : "java v.1"
+        
+   "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": "",
+    "app_name" : "crspng v.1"
   },
+  
   "builders": [{
     "type": "amazon-ebs",
     "access_key": "{{user `aws_access_key`}}",
@@ -23,5 +25,8 @@
       "sudo yum update -y",
       "sudo yum install java-1.8.0-openjdk.x86_64 -y"
     ]
-  },
+  }
+ 
+    ]
+    }
  
