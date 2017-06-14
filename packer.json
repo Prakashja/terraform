@@ -1,7 +1,7 @@
 {
   "variables": {
-    "aws_access_key": "AKIAJIAW4ANPTU6TMJEA",
-    "aws_secret_key": "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",
+    "aws_access_key": "AKIAJ7ZYPMA2MRXH5MEA",
+    "aws_secret_key": "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",
     "app_name" : "java v.1"
   },
   "builders": [{
